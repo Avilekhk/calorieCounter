@@ -1,0 +1,93 @@
+
+    :root {
+        --light-black: #030310;       /* soft neutral grey */
+        --dark-white: #ffffff;         /* elegant dark navy */
+        --accent-blue: #3b82f6;      /* bright modern blue */
+        --light-purple: #ffffff;     /* soft pastel yellow */
+        --gold: #fbbf24;             /* warm modern gold */
+        --light-pink: #f9a8d4;       /* modern soft pink */
+        --dark-red: #b91c1c;         /* clean, deep red */
+        --light-green: #242524;      /* fresh pastel green */
+    }
+
+    body{
+        font-family: "Al Nile", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        /*background-color:var(--dark-white);*/
+        color: var(--light-black);
+        background: linear-gradient(
+                to right,
+                #fbbf24,   /* warm gold */
+                #e5e4e2,   /* silver / light metallic grey */
+                #d4af37    /* darker gold / bronze-ish */
+        );
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 680px;
+
+    }
+    h1,.container,.output{
+        margin: 20px auto;
+    }
+
+    label, legend{
+        font-weight: bold;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    button{
+        cursor: pointer;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background-color: var(--light-purple);
+        border: 2px solid var(--light-black);
+        color: var(--dark-white);
+        font-weight: bold;
+        transition: 0.2s ease;
+
+    }
+    button:hover {
+        background-color: var(--accent-blue);
+        border-color: var(--accent-blue);
+    }
+    button, input, select {
+        min-height: 24px;
+        color: var(--light-green);
+    }
+        fieldset,
+        label,
+        button,
+        input,
+        select {
+            margin-bottom: 10px;
+        }
+    .output {
+        border: 2px solid var(--light-black);
+        padding: 10px;
+        text-align: center;
+    }
+    .hide {
+        display: none;
+    }
+    .output span {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .surplus {
+        color: var(--light-pink);
+    }
+
+    .deficit {
+        color: var(--light-green);
+    }
